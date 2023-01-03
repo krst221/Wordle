@@ -25,6 +25,8 @@ function App() {
     }
   }
 
+  console.log(solution);
+
   return (
     <SolutionContext.Provider value={{setSolution}}>
       <div>

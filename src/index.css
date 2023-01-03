@@ -25,7 +25,6 @@
 body {
   margin: 0;
   text-align: center;
-  font-size: 0.9em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--background-color);
   -webkit-user-select: none;
@@ -137,15 +136,13 @@ button {
 }
 
 .keypad {
-  max-width: 600px;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 .keypad > div {
   text-transform: uppercase;
   cursor: pointer;
   margin: 4px;
-  padding: 10px 20px;
   background: var(--key-color);
   display: inline-block;
   border-radius: 4px;
@@ -262,5 +259,30 @@ button {
   100% {
     transform: scale(1);
     border-color: var(--text-color);
+  }
+}
+
+@media (max-width: 600px) {
+  .keypad {
+    max-width: 390px;
+  }
+  
+  .keypad > div {
+    padding: 5px 10px;
+    font-size: 0.7em;
+
+  }
+}
+
+@media (min-width: 600px) {
+
+  .keypad {
+    max-width: 600px;
+  }
+  
+  .keypad > div {
+    padding: 10px 20px;
+    font-size: 0.9em;
+
   }
 }
