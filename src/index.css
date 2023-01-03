@@ -74,8 +74,6 @@ button {
   align-items: center;
   height: 24px;
   position: absolute;
-  top: 30px;
-  right: 40px;
 }
 
 /* Row */
@@ -270,7 +268,11 @@ button {
   .keypad > div {
     padding: 5px 10px;
     font-size: 0.72em;
+  }
 
+  .themeSwitcher {
+    top: 25px;
+    right: 25px;
   }
 }
 
@@ -284,5 +286,10 @@ button {
     padding: 10px 20px;
     font-size: 0.9em;
 
+  }
+
+  .themeSwitcher {
+    top: 30px;
+    right: 40px;
   }
 }
